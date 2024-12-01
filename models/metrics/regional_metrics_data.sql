@@ -21,4 +21,4 @@ FROM
 GROUP BY
     COUNTRY
 ORDER BY
-    Total_Revenue DESC;
+    Total_Revenue DESC
