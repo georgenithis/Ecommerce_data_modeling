@@ -27,3 +27,4 @@ with cleaned_customer_data as(
         INVOICE_NUMBER IS NOT NULL 
     and
         CUSTOMER_ID is NOT NULL 
+    and ORDER_QUANTITY != 0
