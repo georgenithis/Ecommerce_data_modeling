@@ -1,3 +1,10 @@
+{{
+  config(
+    materialized = 'table',
+    )
+}}
+
+
 with cleaned_customer_data as(
     select 
     *
@@ -17,4 +24,6 @@ with cleaned_customer_data as(
     from    
         cleaned_customer_data
     where 
-        INVOICE_NUMBER IS NOT NULL
+        INVOICE_NUMBER IS NOT NULL 
+    and
+        CUSTOMER_ID is NOT NULL 
